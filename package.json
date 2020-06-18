@@ -1,0 +1,27 @@
+{
+  "name": "automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node your-script.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test0": "node_modules\\.bin\\cypress run",
+    "test1": "npm run test0 -- --spec cypress/integration/examples2/TestMyWay.js --reporter mochawesome",
+    "test2": "npm run test1 -- --headed",
+    "chromeTest": "npm run test2 -- --browser chrome",
+    "dashboardTest": "npm run test0 -- --spec cypress/integration/examples2/TestMyWay.js --record",
+    "folderRunTest": "npm run test0 -- --spec \"cypress/integration/folderRun/*\"",
+    "folderRunTest2": "npm run test0 -- --spec \"cypress/integration/folderRun/**/*\""
+  },
+  "author": "Dejan Gvero",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^4.8.0",
+    "mocha": "^8.0.1",
+    "mochawesome": "^6.1.1"
+  },
+  "dependencies": {
+    "cypress-iframe": "^1.0.1"
+  }
+}

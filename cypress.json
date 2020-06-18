@@ -1,0 +1,11 @@
+{
+  "integrationFolder": "cypress/integration",
+  "viewportWidth": 1280,
+  "defaultCommandTimeout": 8000,
+  "reporter": "mochawesome",
+  "env": {
+    "url": "https://rahulshettyacademy.com"    
+  },
+  "projectId": "xim1cc"
+  
+}
